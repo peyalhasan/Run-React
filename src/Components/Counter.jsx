@@ -22,11 +22,11 @@ function Counter(){
              shadow-xl p-5 md:m-10 m-4 w-50 h-50 bg-white rounded-lg">
                 <h1 className="text-4xl text-center font-bold" >🖥️</h1>
                 <span className="text-4xl text-center font-bold">Count</span>
-                <p className='text-6xl  mt-4'>{count}</p>
+                <p className='text-6xl animate-bounce mt-4 '>{count}</p>
             </div>
             <div className="flex flex-col md:flex-row gap-5 md:gap-10">
                 <button onClick={() => handleClick('increase')} className=" btn btn-primary text-white" > ➕ Increase</button>
-                <button onClick={() => handleClick('reset')} className="btn btn-error text-white" > 🔄️Reset</button>
+                <button onClick={() => handleClick('reset')} className="btn btn-error text-white" > <span className="animate-spin">🔄️</span> Reset</button>
                 <button onClick={() => handleClick('decrease')} className="btn btn-secondary text-white"> ➖ Decrease</button>
             </div>
         </div>
