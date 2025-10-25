@@ -12,7 +12,7 @@ function Counter(){
             setCount(0)
         }
         else if(clicks === 'decrease'){
-            setCount(click => click -1)
+            setCount(click => (click > 0 ? click - 1 : click))
         }
     }
 
